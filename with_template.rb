@@ -2,6 +2,7 @@ require 'sinatra'
 require 'haml'
 
 get '/' do
-  #erb :index
-  haml :index
+  @name = 'Foo'
+  erb :index
+  #haml :index
 end
